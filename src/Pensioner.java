@@ -18,6 +18,12 @@ public class Pensioner extends Person {
     public void die() {
         double x = (getAge() - 50) * pension;
         System.out.println("Этот пенсионер умер, он заработал: " + x);
+
+        int countOfChildren = 0;
+        if (getChildren() != null) {
+            countOfChildren = getChildren().size();
+        }
+        System.out.println("Зато у меня" + countOfChildren + "детей");
     }
 
     @Override

@@ -1,3 +1,4 @@
+import java.util.List;
 import java.util.Objects;
 
 public abstract class Person {
@@ -5,6 +6,16 @@ public abstract class Person {
     private int age;
     private int height;
     private int weight;
+
+    private List<Person> children;
+
+    public List<Person> getChildren() {
+        return children;
+    }
+
+    public void setChildren(List<Person> children) {
+        this.children = children;
+    }
 
     public String getName() {
         return name;
